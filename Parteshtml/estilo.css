@@ -1,0 +1,22 @@
+body {
+    color: rebeccapurple;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* familia enera de fuentes en caso de que tenga uno u otra */
+}
+#primero {
+    color: salmon;
+    border-bottom: 2px solid; /* Crea una barra inferior */
+    padding-bottom: 8px;
+}
+#segundo {
+    color: cornflowerblue;
+}
+h1,h2,h3,h4 {
+    margin: auto; /* Permite decrile a que distancia comienza a aprecer el texto */
+    text-align: center;
+}
+.modText {
+    color:darkseagreen;
+    font-style: italic;
+    font-weight: 100;
+}

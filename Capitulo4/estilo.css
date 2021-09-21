@@ -1,0 +1,17 @@
+h1 {
+    color: darkcyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:wheat;
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    margin: 1cm;
+}
+a {
+    color: thistle;
+    text-decoration: none;    
+}
+a:hover {
+    color: red;
+}
