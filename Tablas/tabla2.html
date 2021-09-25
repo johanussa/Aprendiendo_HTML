@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en Html</title>
+    <link rel="stylesheet" href="Css/estiloTabla.css">
+</head>
+<body>
+    <h1>Posicion de planetas del sistema solar</h1> <hr>
+    <h3>Tabla de Posicion Planetas</h3>
+    <table>
+        <caption>Listado de planetas</caption>
+        <tr>
+            <th>Posicion</th>
+            <th>Planeta</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mercurio</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Venus</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tierra</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Marte</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Jupiter</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Saturno</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Urano</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Neptuno</td>
+        </tr>
+    </table> <br>
+    <div>
+        <table class="table">
+            <caption>Listado de Personas</caption>
+            <tr class="tr2">
+                <th class="table2">Nombres</th> <!-- Con colspan le indicamos cuantas columnas o celdas queremos ocupar -->
+                <th class="table2">Apellidos</th>
+                <th class="table2">Correo</th>
+            </tr>
+            <tr class="tr2">
+                <td class="tr2">Johan Sebastian</td>
+                <td class="tr2">Ussa Rubio</td>
+                <td class="tr2">johanussa@gmail.com</td>
+            </tr>
+            <tr class="tr2">
+                <td class="tr2">Laura Valentina</td>
+                <td class="tr2">Gonzalez Arana</td>
+                <td class="tr2">lauragonzalez@gmail.com</td>
+            </tr>
+            <tr class="tr2">
+                <td class="tr2">Ana Milena</td>
+                <td class="tr2">Ussa Rubio</td>
+                <td class="tr2">anamile@gmail.com</td>
+            </tr>
+            <tr class="tr2">
+                <td class="tr2">Maria Mercedes</td>
+                <td class="tr2">Rincon Rubio</td>
+                <td class="tr2">mariaru@gmail.com</td>
+            </tr>
+        </table> <br> <hr width="80%"> <br>
+    </div>   
+    <div>
+        <table class="table">
+            <caption>Listado de Personas 2</caption>
+            <tr class="tr2">
+                <th class="table2" colspan="2">Nombres</th> <!-- Con colspan le indicamos cuantas columnas o celdas queremos ocupar -->
+                <th class="table2">Correo</th>
+            </tr>
+            <tr class="tr2">
+                <td class="tr2">Johan Sebastian</td>
+                <td class="tr2">Ussa Rubio</td>
+                <td class="tr2" rowspan="2">johanussa@gmail.com</td> <!-- Rowspan nos permite combinar las filas o celdas que necesitemos  -->
+            </tr>
+            <tr class="tr2">
+                <td class="tr2">Laura Valentina</td>
+                <td class="tr2">Gonzalez Arana</td>
+            </tr>
+        </table>
+    </div> 
+</body>
+</html>
