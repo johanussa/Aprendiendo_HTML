@@ -1,0 +1,19 @@
+h1 {
+    color: #f07167;    
+}
+a:link {
+    color: #fb8500; /* Aplica para elementos que no se ha dado click */
+    text-decoration: none; /* Quita subrayados */
+}
+a:visited {
+    color: #212121; /* Color que toma despues de dar click */ 
+    text-decoration: none; /* Le quita el subrayado a los link */
+}
+a:hover { /* Al ponerse encima del link */
+    color: #2b9db1;
+    text-decoration: overline;
+}
+a:active { /* Cuando se le da click al elemento */
+    color: #c1e427;
+    text-decoration: double;
+}

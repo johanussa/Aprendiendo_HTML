@@ -1,0 +1,29 @@
+h1, h3 {
+    color: cadetblue;
+    text-align: center;
+}
+p {
+    color: white;
+    background-color: rgb(79, 71, 119);
+    text-align: justify;
+    padding: 20px; /* separa la caja estandar de los bordes especificando en este caso la cantidad de pixeles que hay entre el inicio del cuadro del parrafo hasta donde comienza la lectura */
+    border: 10px solid powderblue; /* los parrafos se envolveran en un borde que en este caso evuelve el parrafo */
+    margin: 20px; /* Separa los elementos con una margen desde todo el borde de la pantalla, hasta la cantidad de pixeles especificados */    
+}
+#otro {
+    color: rgb(104, 176, 248);
+    margin-top: 40px; /* podemos personalizar cada uno de los lados */
+    margin-right: 100px;
+    margin-bottom: 20px; /* Lado inferior */
+    margin-left: 10px;
+    /* Tambien lo podremos definir en un solo argumento asi:
+    margin: 40px(top), 10px(right), 20px(botton), 30px(left); 
+    margin: auto; -- Se centra automaticamente el elemento */
+}
+#otro1 {
+    color: black;
+    background-color: aliceblue;
+    margin: auto; /* Se centra de forma automatica al largo de la ventana */
+    text-align: end; /* Modificar la ubicacion del texto */
+}
+/* Ejemplo de paletas de colores */
