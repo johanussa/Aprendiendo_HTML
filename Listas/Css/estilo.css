@@ -1,0 +1,18 @@
+ul {
+    list-style-type: square; /* Le podremos cambiar los indicadores de cada item en varias opciones disponibles */
+} 
+/* Personalizacion de los Items de la Lista ordenada */
+ol {
+    list-style: none; /* Quitamos los numeros por defecto lo personalizamos  */
+    counter-reset: contador; /* Se reinicia el contador cada vez que se llama la lista, en cada lista nueva */
+} 
+ol li { /* Modificar solo los elementos dentro del <ol> */
+    counter-increment: contador; /* Hace cuenta de la cantidad de items que hay en las etiquetas estan señaladas y cuenta de uno en uno */
+} 
+ol li::before { /* Before me permite hacer que se visualice un texto antes del  elemento lo que queremos que salga, en este caso Curso y el # */
+    content: "Curso " counter(contador) " - "; /* Agregamos el elemento que vamos a introducir antes del item que en este caso es Curso y podremos agregar variables que es un counter */
+    color: #ff1e00; /* Le asignamos un color */ 
+} 
+ol li::after { /* Mostrar contenido despues del elemento */
+    content: " ..."; /* En este caso utilizamos un contador que lleva el orden de la cantidad de items agregados */ 
+} 

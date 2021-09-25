@@ -1,0 +1,23 @@
+h1 {
+    color: #1d3557;
+}
+ul {
+    list-style-type: none; /* Sin estilo de indicador */
+    background-color: #457d9d; /* Color fondo */
+    overflow: hidden; /* La lista se muestra de manera independiente */ 
+    margin: 0;
+    padding: 0;
+}
+li {
+    float: left; /* Hace que los elementos floten hacia la izquierda y se acomodan hacia la derecha quedando de forma horizontal */
+}
+li a { /*Le indicamos que modificaremos las etiquetas <a> de link que estan situados dentro del <li> para no modificar mas */
+    display: block; /* Se desplieguen cmo bloque */ 
+    color: white; /* Color de texto */
+    text-align: center;
+    padding: 15px;
+    text-decoration: none; /* Quita el subrayado del link */
+}
+li a:hover { /* Cuando este encima del link */
+    background-color: #1d3557;
+}
