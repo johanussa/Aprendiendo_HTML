@@ -1,0 +1,29 @@
+* { /* El * define que todo lo que se agregue en este bloque, estos estilos, se van a aplicar en toda la pagina */
+    margin: 0;
+    padding: 0;
+}
+.tarjet { /* El . hace referencia a una clase, clase de css */
+    border: 8px solid rgb(187, 81, 81);
+    box-shadow: 15px 15px 10px #888;
+    background-color: cornsilk;
+    text-align: justify;
+    padding: 6px;
+    margin: 10px;
+}
+.title {
+    text-align: center;
+    color: rgb(216, 84, 32);
+    text-shadow: 6px 6px 8px black;
+    padding: 20px;
+}
+.title2 {
+    text-align: center;
+    color: antiquewhite;
+    background-color: rgb(155, 58, 20);
+    box-shadow: 10px 10px 10px #888;
+    padding: 5px;  
+    margin: 15px 100px;  
+}
+.title3 {
+    color: #f72585;
+}
