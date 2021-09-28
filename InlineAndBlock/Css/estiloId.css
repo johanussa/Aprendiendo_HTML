@@ -1,0 +1,5 @@
+#title_main { /* # hace referencia a un ID, es un identificador que solo se aplica a un solo elemento o etiqueta */
+    color: #722585;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
