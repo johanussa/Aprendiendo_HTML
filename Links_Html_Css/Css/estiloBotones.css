@@ -7,7 +7,7 @@ a:link, a:visited {
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block; /* Pone cada elemento en un bloque*/
+    display: inline-block; /* Pone cada elemento en un bloque */
 }
 a:hover, a:active {
     background-color: #f72585;
