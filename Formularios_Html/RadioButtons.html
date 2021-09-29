@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioButtons y CheckBoxes Html</title>
+</head>
+<body>
+    <h1>RadioButtons y Checkboxes en Html</h1>
+    <form action="">
+        <label for="nombre">Nombre :&nbsp; </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="true"> <br><br>
+        <label for="apellido">Apellido :</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required="true"> <br><br>
+        <label for="edad">Edad :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" name="edad" id="edad" placeholder="Edad" step="any"> <!-- step me permite decirle 
+            que lea cualquier tipo numerico, ya sea entero, flotante o tipo double -->
+        <br><br>
+        <label for="email">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+        <input type="email" name="email" id="email" placeholder="Correo"> <br><br>
+        
+        <label for="">Genero :</label>
+        <input type="radio" name="genre" id="male" value="male">
+        <label for="">Male</label>
+        <input type="radio" name="genre" id="female" value="female">
+        <label for="">Female</label>
+        <input type="radio" name="genre" id="other" value="other">
+        <label for="">Other</label>
+        <!-- Para solo seleccionar una opcion del radiobutton, hay que 
+            llamar a todos los elementos que intervienen, con el mismo nombre  -->
+        <!-- EL valor de value es para que le demos el nmbre que queremos 
+            que tenga ese input al momento de enviar la informacion al servidor 
+            para poderlo identificar mas facilmente  -->
+        <br><br>
+        <label for="">Musica favorita :</label> <br> &nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="clasic" id="clasic" value="clasic">
+        <label for="clasic">Clasic</label> <br> &nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="reggae" id="reggae" value="reggae">
+        <label for="reggae">Reggae</label> <br> &nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="metal" id="metal" value="metal">
+        <label for="metal">Metal</label> <br> &nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="salsa" id="salsa" value="salsa">
+        <label for="salsa">Salsa</label> <br> &nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="jazz" id="jazz" value="jazz">
+        <label for="jazz">Jazz</label> <br><br> 
+        
+        <label for="">Marca de Autos favorita :</label> 
+        <select name="auto" id="auto">
+            <option value="volvo">Volvo</option>
+            <option value="chevrollet">Chevrollet</option>
+            <option value="mazda">Mazda</option>
+            <option value="hiunday">Hiunday</option>
+            <option value="mitsubitshi">Mitsubitshi</option>
+            <option value="bmw">BMW</option>
+            <option value="audi" selected="true">Audi</option> <!-- Seleccionar por defecto con selected -->
+        </select> <br><br>
+        <!-- Se puede seleccionar opciones desde un listado, con option podemos manejar los elementos que 
+            se vayan a ver alli, vale sera el nombre que tendra al momento de enviar al servidor, si en 
+            select, le indicamos el parametro de multiple="true", nos dejara seleccionar mas de un elemento -->        
+        <!-- TextArea que nos permite campturar un campo de texto mas grande como en un comentario o una descripcion -->
+        <label for="">Comentario :</label> <br><br>
+        <textarea name="comentario" id="comentario" cols="30" rows="5">
+          Comentario
+        </textarea>        
+        <br><br>
+        <input type="submit" value="Enviar">   
+    </form>
+</body>
+</html>

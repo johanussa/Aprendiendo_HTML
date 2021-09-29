@@ -12,16 +12,21 @@
         <label for="nombre">Nombre:&nbsp; </label> <!-- Label es un texto que podremos 
             agregar a la pagina, este tiene un atributo llamado for="" el cual 
             nos permite relacionarlo con otra variable o etiqueta -->
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre"> <!-- Ingresa un texto en el cuadro en blanco para referenciar que debe ir en ese espacio -->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="true"> <!-- Ingresa 
+            un texto en el cuadro en blanco para referenciar que debe ir en ese espacio -->
         <br><br>
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Apellido"> <br><br>
-        
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required="true"> <br><br>
+        <!-- El metodo required hace que si el campo aparece vacio, este no enviara informacion hasta que 
+            se haya ingresado el valor correspondiente, lo que hace es validar la informacion y podremos 
+            utilizar formnovalidate="formnovalidate" para omitir este error y pasar sin validar -->
         <input type="submit" value="Enviar">
     </form>
     <!-- Las etiquetas input me permiten capturar los elementos que va 
         ingresar un usuaruio, en type se define el tipo de dato que vamos a capturar 
         o el tipo de funcion que va a cumplir como puede ser un boton o un password -->
-    <!-- Los valores input tiene parametros como value en el cual podremos poner valores por defecto, asi como tambien asignarle un nombre que me sirve para identificar ese valor que se envia a un servidor -->
+    <!-- Los valores input tiene parametros como value en el cual podremos poner valores 
+        por defecto, asi como tambien asignarle un nombre que me sirve para identificar 
+        ese valor que se envia a un servidor -->
     </body>
 </html>

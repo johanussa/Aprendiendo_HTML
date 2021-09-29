@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email y Number en Html</title>
+</head>
+<body>
+    <h1>Formularios en Html</h1>
+    <form action="">
+        <label for="nombre">Nombre:&nbsp; </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="true">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required="true"> <br><br>
+        <label for="">Edad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" name="edad" id="edad" placeholder="Edad" step="any"> <!-- step me permite decirle que lea cualquier tipo numerico, ya sea entero, flotante o tipo double -->
+        <br><br>
+        <label for="">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+        <input type="email" name="email" id="email"
+        placeholder="Correo"> <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

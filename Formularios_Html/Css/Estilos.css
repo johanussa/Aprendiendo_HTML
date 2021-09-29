@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7209b7, #3f37c0);
+}
+.contenedor {
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0,0,0, .5);
+    border-radius: 10px;
+    text-shadow: 8px 8px 8px black;
+    box-shadow: 10px 10px 10px black;
+}
+.contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+.contenedor .elemento label { /* Asi le indicamos que solo modificamos los labels 
+    situados en el contenedor elemento y  a su vez situados en el contenedor "contenedor */
+    color: white;
+}
+.contenedor .elemento input {
+    width: 100%;
+    padding: 10px 5px;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+.contenedor .elemento input[type="submit"] { /* Mediante un arreglo puedo hacer 
+    declaraciones para hacer modificaciones a solo elementos mas especificos */
+    background-color: #f72585;
+    box-shadow: 8px 8px 10px black;
+    border: none;
+    letter-spacing: 5px; /* Separa letra por letra */
+    text-transform: uppercase; /* Convierte a mayuscula el texto */ 
+    cursor: pointer; /* Cambiar icono del cursor */
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;    
+}
+#boton:hover {
+    color: #4cf062;
+}

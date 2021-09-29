@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Metodo Get y Post Http</title>
+    <!-- El metodo get hace es enviar la informacion captada en los textfield y enviada por el URL al servidor se adjunta a la url, pero si es una contraseña no debe ir por este medio que es asi como lo maneja por defecto Html -->
+</head> 
+<body>  
+    <h1>Formularios en Html</h1>
+    <form method="POST"> <!-- Este metodo es el que me permite que no se adjunten contraseñas a la direccion url y que no puedan ser visibles o interceptadas porterceros, por defecto esta viene con GET que esta si concatena la informacion al url -->
+        <label for="usuario">Usuario:&nbsp; &nbsp;</label>
+        <input type="text" name="usuario" id="usuario" placeholder="User" required="true"> <br><br>
+        <label for="Password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Pass" required="true"> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

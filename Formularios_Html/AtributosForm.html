@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELementos Form</title>
+</head>
+<body>
+    <h1>Atributos elementos Form</h1>
+    <h3>Universidad Html</h3>    
+    <form action="mi_servidor" autocomplete="off"> <!-- Aqui se coloca la url del servidor 
+        que recibe la informacion enviada de los campos de texto el POST oculta toda la 
+        informacion como taqmbien estados del servidor, y con el atributo target="_blank" 
+        haremos que la respuesta se muestre en otra ventana -->    
+        <!-- autocomplete="off" evita que se autocompleten los valores en los cmapos de formularios -->     
+        <fieldset> <!-- Fieldset coloca un borde fino al rededor de algo que queramos 
+            encerrar en el, para identificar un formulario -->
+            
+            <legend>Datos Persona</legend> <!-- Legente le coloca un titulo a ese marco -->
+            <label for="nombre">Nombre :&nbsp; </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="true"> <br><br>
+            <label for="apellido">Apellido :</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required="true"> <br><br>
+            <label for="edad">Edad :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" name="edad" id="edad" placeholder="Edad" step="any"> <!-- step me permite decirle 
+                que lea cualquier tipo numerico, ya sea entero, flotante o tipo double -->
+            <br><br>
+            <label for="id">ID :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="id" id="id" required="true" readonly="true" value="100" disabled="true"> 
+            <!-- readonly me permite poner un valor que identificara un usuario y este lo podra ver pero no lo 
+                podra modificar, y el metdo disable hara que este no se pueda dar click sobre el elemento, queda 
+                desabilitado, pero ya no se enviara el valor al servidor -->
+            <br><br>
+            <label for="email">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+            <input type="email" name="email" id="email" placeholder="Correo"> <br><br>
+            <input type="hidden" id="system" name="system" value="SAP"> <!-- Cuando declaramos el input de 
+                tipo hidden, podremos enviar informacion por debajo del sistema, informacion que el usuario 
+                no vera pero que se enviara al servidor -->
+
+            <label for="">Genero :</label>
+            <input type="radio" name="genre" id="male" value="male">
+            <label for="">Male</label>
+            <input type="radio" name="genre" id="female" value="female">
+            <label for="">Female</label>
+            <input type="radio" name="genre" id="other" value="other">
+            <label for="">Other</label>
+            <!-- Para solo seleccionar una opcion del radiobutton, hay que 
+                llamar a todos los elementos que intervienen, con el mismo nombre  -->
+            <!-- EL valor de value es para que le demos el nmbre que queremos 
+                que tenga ese input al momento de enviar la informacion al servidor 
+                para poderlo identificar mas facilmente  -->
+            <br><br>
+            <label for="">Musica favorita :</label> <br> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="clasic" id="clasic" value="clasic">
+            <label for="clasic">Clasic</label> <br> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="reggae" id="reggae" value="reggae">
+            <label for="reggae">Reggae</label> <br> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="metal" id="metal" value="metal">
+            <label for="metal">Metal</label> <br> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="salsa" id="salsa" value="salsa">
+            <label for="salsa">Salsa</label> <br> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="jazz" id="jazz" value="jazz">
+            <label for="jazz">Jazz</label> <br><br> 
+            
+            <label for="">Marca de Autos favorita :</label> 
+            <select name="auto" id="auto">
+                <option value="volvo">Volvo</option>
+                <option value="chevrollet">Chevrollet</option>
+                <option value="mazda">Mazda</option>
+                <option value="hiunday">Hiunday</option>
+                <option value="mitsubitshi">Mitsubitshi</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected="true">Audi</option> <!-- Seleccionar por defecto con selected -->
+            </select> <br><br>
+            <!-- Se puede seleccionar opciones desde un listado, con option podemos manejar los elementos que 
+                se vayan a ver alli, vale sera el nombre que tendra al momento de enviar al servidor, si en 
+                select, le indicamos el parametro de multiple="true", nos dejara seleccionar mas de un elemento -->        
+            <!-- TextArea que nos permite campturar un campo de texto mas grande como en un 
+                comentario o una descripcion -->
+            <label for="">Comentario :</label> <br><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"> Comentario </textarea> <br><br>
+            <input type="submit" value="Enviar">  
+            <input type="reset" value="Restablecer"> <!-- El boton con valor reset me resetea todos los valores de 
+                los campos a los valores predeterminados o en blanco -->          
+        </fieldset> 
+    </form>
+</body>
+</html>
